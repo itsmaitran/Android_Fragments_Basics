@@ -38,8 +38,8 @@ class MyCongresspersonOverviewRecyclerViewAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = mValues[position]
-        holder.mIdView.text = item.id
-        holder.mContentView.text = item.title
+        holder.mIdView.text = item.state
+        holder.mContentView.text = "${item.firstName} ${item.lastName}"
 
         with(holder.mView) {
             tag = item
